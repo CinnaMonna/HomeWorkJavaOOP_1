@@ -1,22 +1,23 @@
 package homework;
 
-public class User{
+public class User implements Persister, Reportable {
     private final String name;
 
-    public User(String name){
+    public User(String name) {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void save(){
-        Persister persister = new Persister(this);
-        persister.save();
+    @Override
+    public void save() {
+        System.out.println("Save user: " + name);
     }
 
-    public void report(){
+    @Override
+    public void report() {
         System.out.println("Report for user: " + name);
     }
 }
