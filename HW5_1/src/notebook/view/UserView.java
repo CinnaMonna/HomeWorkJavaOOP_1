@@ -72,7 +72,6 @@ public class UserView {
         String firstName = prompt("Имя: ");
         String lastName = prompt("Фамилия: ");
         String phone = prompt("Номер телефона: ");
-//        return new User(firstName, lastName, phone);
         return User.userBuilder()
                 .firstName(firstName)
                 .lastName(lastName)

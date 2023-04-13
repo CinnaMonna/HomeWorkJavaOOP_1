@@ -6,17 +6,6 @@ public class User {
     private String lastName;
     private String phone;
 
-//    public User(String firstName, String lastName, String phone) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.phone = phone;
-//    }
-//
-//    public User(Long id, String firstName, String lastName, String phone) {
-//        this(firstName, lastName, phone);
-//        this.id = id;
-//    }
-
     private User(UserBuilder userBuilder) {
         this.id = userBuilder.id;
         this.firstName = userBuilder.firstName;

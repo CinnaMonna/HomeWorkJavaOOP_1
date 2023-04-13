@@ -15,7 +15,6 @@ public class UserMapper implements Mapper<User, String> {
         long id;
         if (isDigit(lines[0])) {
             id = Long.parseLong(lines[0]);
-//            return new User(id, lines[1], lines[2], lines[3]);
             return User.userBuilder()
                     .id(id)
                     .firstName(lines[1])
